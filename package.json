@@ -1,9 +1,12 @@
 {
   "name": "mc-tracker",
   "private": true,
+  "homepage": "https://Joao-Pedro-m.github.io/MinecraftTracker",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -21,6 +24,7 @@
     "eslint": "^10.13.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
+    "gh-pages": "^6.3.0",
     "globals": "^17.13.0",
     "vite": "^8.3.4"
   }
